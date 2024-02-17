@@ -1,0 +1,67 @@
+@import url('/css/reset.min.css');
+@import url('/assets/fonts/fonts.css');
+
+html {
+    font-family: 'Lato', 'Tahoma', sans-serif;
+    font-size: 10px;
+    color: rgba(90, 90, 127, 1);
+    scroll-behavior: smooth;
+}
+.colortext {
+    color: rgba(237, 255, 126, 1);
+}
+.header {
+    background-color: black;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+}
+.header__logo-icon {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+.header__navigation {
+    width: 100%;
+    max-width: 750px;
+}
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+.header__list-item {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.header__list-item + .header__list-item::before {
+    content: '';
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: white;
+    margin: 0 40px;
+}
+.link:visited {
+}
+
+.link:focus {
+    outline: none;
+}
+
+.link:hover {
+    color: rgba(237, 255, 126, 1);
+}
+
+.link:active {
+    color: rgba(112, 103, 207, 1)
+    ;
+}
