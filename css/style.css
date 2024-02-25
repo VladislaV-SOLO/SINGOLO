@@ -14,7 +14,6 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-
 .header__logo-icon {
   color: white;
   font-weight: 700;
@@ -33,7 +32,7 @@ html {
 
 .header__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   color: white;
   font-weight: 700;
   font-size: 12px;
@@ -51,7 +50,8 @@ html {
   display: block;
   width: 0.4rem;
   height: 0.4rem;
-  background-color: rgb(237, 255, 126);
+  border-radius: 50%;
+  background-color: white;
   margin: 0 40px;
 }
 
@@ -128,7 +128,6 @@ html {
   background-color: rgb(112, 103, 207);
   padding: 20px 40px;
 }
-
 .main__content {
   display: flex;
   justify-content: center;
@@ -139,48 +138,28 @@ html {
   width: 32px;
 }
 
+.arrow-input {
+  display: none;
+}
+
 .content {
   padding: 60px 0 30px 0;
 }
-
 .content__text {
   padding: 20px 40px;
 }
-
 .content__text-title {
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
   color: black;
 }
-
 .content__text-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: rgb(90, 90, 127);
   margin-top: 20px;
-}
-
-.card {
-  gap: 20px;
-  display: flex;
-}
-
-.card__text-title {
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 18px;
-  color: rgb(90, 90, 127);
-}
-
-.card__text-description {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: justify;
-  color: rgb(90, 90, 127);
-  margin-top: 12px;
 }
 
 .content__cards {
@@ -209,32 +188,49 @@ html {
   grid-area: 2/3/3/4;
 }
 
+.card {
+  gap: 20px;
+  display: flex;
+}
+
+.card__text-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgb(90, 90, 127);
+}
+
+.card__text-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+  color: rgb(90, 90, 127);
+  margin-top: 12px;
+}
+
 .portfolio {
   padding: 30px 40px 60px 40px;
   background-color: rgb(237, 255, 126);
 }
-
 .portfolio__text {
   padding: 0 0 40px 0;
   display: grid;
   grid-gap: 20px;
 }
-
 .portfolio__text-title {
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
   color: black;
 }
-
 .portfolio__text-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: rgb(90, 90, 127);
 }
-
-.buttons {
+.portfolio__text__buttons {
   display: flex;
 }
 
@@ -322,7 +318,6 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer__description-text {
   font-weight: 900;
   font-size: 13px;
@@ -335,6 +330,9 @@ html {
 }
 
 @media screen and (max-width: 1020px) {
+  .header__list-item + .header__list-item::before {
+    margin: 0 20px;
+  }
   .portfolio__img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -378,6 +376,12 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 30px;
+  }
+  .header__list-item + .header__list-item::before {
+    margin: 0 10px;
+  }
   .content__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -447,18 +451,6 @@ html {
   }
 }
 @media screen and (max-width: 550px) {
-  .header {
-    padding: 20px;
-  }
-  .content__cards {
-    display: flex;
-    flex-flow: column;
-  }
-  .img {
-    width: 180px;
-  }
-}
-@media screen and (max-width: 440px) {
   .header__logo {
     justify-content: center;
     padding-right: 80px;
@@ -468,7 +460,7 @@ html {
     justify-content: flex-start;
   }
   .header {
-    padding: 15px 20px;
+    padding: 20px;
     flex-direction: row;
     align-items: center;
     transition: 0.5s ease-in;
@@ -512,8 +504,26 @@ html {
   .header__list {
     padding: 90px 20px 0 80px;
   }
+  .header__list-item + .header__list-item::before {
+    display: none;
+  }
   .header__navigation {
     display: none;
+  }
+  .link:active {
+    color: white;
+  }
+  .content__cards {
+    display: flex;
+    flex-flow: column;
+  }
+  .img {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header {
+    padding: 15px 20px;
   }
   .main__content-img {
     width: 280px;
