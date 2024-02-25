@@ -10,13 +10,19 @@
     <!-- HEADER -->
     <header>
         <div class="header">
+            <div class="burger">
+                <div class="burger__container">
+                    <div class="burger__line"></div>
+                    <input type="checkbox" class="burger__checkbox">
+                </div>
+            </div>
             <div class="header__logo">
                 <p class="header__logo-icon">SINGOLO<span class="colortext">*</span></p>
             </div>
             <nav class="header__navigation">
                 <ul class="header__list">
                     <li class="header__list-item">
-                        <a href="#" class="link header__list-item-link"><span class="colortext">HOME</span></a>
+                        <a href="#" class="link header__list-item-link link_home">HOME</a>
                     </li>
                     <li>
                         <a href="#" class="link header__list-item-link">SERVICES</a>
@@ -55,7 +61,7 @@
             <p class="content__text-title">Our Services</p>
             <p class="content__text-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
-        <div class="cards">
+        <div class="content__cards">
             <div class="card card-design">
                 <div class="card__icon">
                     <img src="./assets/img/services-item-1.svg" alt="" class="icon">
@@ -113,31 +119,43 @@
         </div>
     </div>
    <!-- PORTFOLIO -->
-   <div class="PORTFOLIO">
-        <div class="text">
-            <p class="text-title">Portfolio</p>
-            <p class="text-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="buttons">
-                <button class="btn btn_secondary">All</button>
+   <div class="portfolio">
+        <div class="portfolio__text">
+            <p class="portfolio__text-title">Portfolio</p>
+            <p class="portfolio__text-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <div class="portfolio__buttons">
+                <button class="btn btn_secondary btn_all">All</button>
                 <button class="btn btn_secondary">Web Design</button>
                 <button class="btn btn_secondary">Graphic Design</button>
                 <button class="btn btn_secondary">Artwork</button>
             </div>
         </div>
-        <div class="img">
-            <img src="./assets/img/portfolio-1.svg" alt="" class="img-1">
-            <img src="./assets/img/portfolio-2.svg" alt="" class="img-2">
-            <img src="./assets/img/portfolio-3.svg" alt="" class="img-3">
-            <img src="./assets/img/portfolio-4.svg" alt="" class="img-4">
-            <img src="./assets/img/portfolio-5.svg" alt="" class="img-5">
-            <img src="./assets/img/portfolio-6.svg" alt="" class="img-6">
-            <img src="./assets/img/portfolio-7.svg" alt="" class="img-7">
-            <img src="./assets/img/portfolio-8.svg" alt="" class="img-8">
-            <img src="./assets/img/portfolio-9.svg" alt="" class="img-9">
-            <img src="./assets/img/portfolio-10.svg" alt="" class="img-10">
-            <img src="./assets/img/portfolio-11.svg" alt="" class="img-11">
-            <img src="./assets/img/portfolio-12.svg" alt="" class="img-12">
+        <div class="portfolio__img">
+            <img src="./assets/img/portfolio-1.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-2.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-3.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-4.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-5.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-6.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-7.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-8.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-9.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-10.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-11.svg" alt="" class="img">
+            <img src="./assets/img/portfolio-12.svg" alt="" class="img">
         </div>
    </div>
+   <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer__description">
+            <p class="footer__description-text">© Copyright 2013</p>
+        </div>
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" class="icon"><img src="./assets/img/ico-facebook.svg" alt=""></a>
+            <a href="https://www.google.com/intl/ru/account/about/" target="_blank" class="icon"><img src="./assets/img/ico-google-plus.svg" alt=""></a>
+            <a href="https://twitter.com/?lang=ru" target="_blank" class="icon"><img src="./assets/img/ico-twitter.svg" alt=""></a>
+            <a href="https://ru.linkedin.com/" target="_blank" class="icon"><img src="./assets/img/ico-linkedin.svg" alt=""></a>
+        </div>
+    </div>
 </body>
 </html>
